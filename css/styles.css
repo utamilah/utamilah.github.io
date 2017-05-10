@@ -1,82 +1,125 @@
-/*font-family: 'Roboto Mono', monospace;
-font-family: 'Libre Franklin', sans-serif;*/
-
-body {
-  
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 a {
   text-decoration: none;
-  color: #808080;
+  color: #000;
+  transition: color 0.5s ease;
 }
 
 a:hover {
-  background: #6200EA;
-  color: #ffffff;
-  padding: 2px 0 2px 0;
+  color: #6200EA;
 }
 
-.container {
-  width: 60%;
+.wrapper {
+  width: 70%;
   margin: auto;
+  border-bottom: 1px solid #4B4B4B;
 }
 
-header {
+.top-section {
   padding-top: 50px;
-  margin-bottom: 100px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-header a {
-  padding-bottom: 100px;
+.contact-info ul {
+  margin: 0;
 }
 
-header .logo {
+.contact-info li {
+  text-align: right;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.contact-info li:first-child {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logo {
   background: url(../images/hali-logo.png) no-repeat;
   background-size: 100px;
   background-position: cover;
   height: 100px;
   width: 100px;
+  margin-right: 0;
+  float: left;
 }
 
-main {
+
+.project {
+  margin-bottom: 50px;
+}
+
+.projects-section {
   margin-bottom: 100px;
+  width: 60%;
+  float: left;
 }
 
-main h2 {
+
+.projects-section h1, .projects-section h2, .experience-section h1, .experience-section h2 {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 700;
   margin-top: 0;
 }
 
-main h3 {
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 200;
-  font-size: 14px;
-  letter-spacing: 1px;
+.projects-section h1, .experience-section h1 {
   text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
 }
 
-main p {
+.projects-section h2, .experience-section h2 {
+  font-size: 18px;
+}
+
+.detail {
   font-family: 'Roboto Mono', monospace;
-  padding-bottom: 50px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 15px;
   line-height: 24px;
 }
 
-main section {
+ul.detail  {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.detail li {
+  display: inline;
+}
+
+.detail li:after {
+  content: ' / ';
+}
+
+.detail li:last-child:after {
+  content: '';
+}
+
+.projects-section section {
   padding: 50px 0 50px 0;
   border-bottom: 1px solid #000;
 }
 
-main .projects ul {
-  padding: 0;
-}
-
-  main .projects li {
-    list-style: none;
-  }
-
-.contact h2 {
-  text-align: center;
+.projects-section p, .experience-section p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
 }
 
 .contact .email {
@@ -84,25 +127,46 @@ main .projects ul {
   text-align: center;
 }
 
-.contact ul {
-  padding: 20px 0 0 0;
-  text-align: center;
-  margin-bottom: 0;
+.about-section {
+  float: right;
+  width: 40%;
 }
 
-.contact li {
-  display: inline;
-  padding-right: 20px;
+.about-section p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  line-height: 32px;
 }
 
-.social media {
-
+.about-section img {
+  width: 100%;
 }
 
-/*#project-1 {
-  background: url('../images/windows-1076116_1920.jpg') no-repeat;
-  background-size: cover;
-}*/
+.experience-section {
+  margin-top: 50px;
+}
+
+.experience {
+  margin-bottom: 40px;
+}
+
+.experience span {
+  font-weight: 700;
+}
+
+.download-button {
+  margin: 50px 0 50px 0;
+}
+
+.download-button a {
+  padding: 18px 28px 18px 28px;
+  background: #6200EA;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.77;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+}
 
 @media (max-width: 700px) {
   .container {
