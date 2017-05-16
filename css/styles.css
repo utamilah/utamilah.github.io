@@ -22,6 +22,10 @@ a:hover {
   border-bottom: 1px solid #4B4B4B;
 }
 
+.wrapper.footer {
+  border-bottom: none;
+}
+
 .top-section {
   padding-top: 50px;
   padding-bottom: 40px;
@@ -57,7 +61,6 @@ a:hover {
   float: left;
 }
 
-
 .project {
   margin-bottom: 50px;
 }
@@ -67,7 +70,6 @@ a:hover {
   width: 60%;
   float: left;
 }
-
 
 .projects-section h1, .projects-section h2, .experience-section h1, .experience-section h2 {
   font-family: 'Libre Franklin', sans-serif;
@@ -92,7 +94,6 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: .5px;
   margin-bottom: 15px;
-  line-height: 24px;
 }
 
 ul.detail  {
@@ -120,6 +121,7 @@ ul.detail  {
 .projects-section p, .experience-section p {
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
+  line-height: 32px;
 }
 
 .contact .email {
@@ -144,10 +146,11 @@ ul.detail  {
 
 .experience-section {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .experience {
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
 
 .experience span {
@@ -155,7 +158,7 @@ ul.detail  {
 }
 
 .download-button {
-  margin: 50px 0 50px 0;
+  margin: 50px 0 70px 0;
 }
 
 .download-button a {
@@ -163,13 +166,44 @@ ul.detail  {
   background: #6200EA;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.77;
+  letter-spacing: 2px;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
+  font-size: 12px;
 }
 
-@media (max-width: 700px) {
-  .container {
-    width: 90%;
-  }
+.footer {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.footer a {
+  padding: 5px;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1080px) {
+
+.contact-info {
+  text-align: left;
+}
+
+.projects-section {
+  float: none;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.about-section {
+  float: none;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.download-button {
+  text-align: center;
+}
+
+
 }
