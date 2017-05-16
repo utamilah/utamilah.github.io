@@ -150,7 +150,7 @@ ul.detail  {
 }
 
 .experience {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 .experience span {
@@ -170,6 +170,11 @@ ul.detail  {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
   font-size: 12px;
+  transition: background-color 0.5s ease;
+}
+
+.download-button a:hover {
+  background: #000;
 }
 
 .footer {
@@ -205,5 +210,14 @@ ul.detail  {
   text-align: center;
 }
 
+
+}
+
+
+@media only screen and (max-width : 540px) {
+
+.top-section {
+  display: flex;
+}
 
 }
