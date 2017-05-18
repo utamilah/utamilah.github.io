@@ -53,8 +53,7 @@ a:hover {
 
 .logo {
   background: url(../images/hali-logo.png) no-repeat;
-  background-size: 100px;
-  background-position: cover;
+  background-size: contain;
   height: 100px;
   width: 100px;
   margin-right: 0;
@@ -124,6 +123,22 @@ ul.detail  {
   line-height: 32px;
 }
 
+.project-view {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  background: turquoise;
+  left: 100%;
+  transition: left 0.5s ease;
+}
+
+.project-view .exit {
+  color: #fff;
+  display: block;
+  margin: 20px;
+  font-size: 25px;
+}
+
 .contact .email {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
@@ -190,34 +205,64 @@ ul.detail  {
 /* Desktops and laptops ----------- */
 @media only screen and (max-width : 1080px) {
 
-.contact-info {
-  text-align: left;
+  .contact-info {
+    text-align: left;
+  }
+
+  .projects-section {
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
+
+  .about-section {
+    float: none;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+
+  .footer div.contact-info {
+    text-align: center;
+  }
+
+
+  .footer .logo {
+    display: none;
+  }
+
 }
 
-.projects-section {
-  float: none;
-  width: 100%;
-  border-bottom: 1px solid #000;
-}
+@media only screen and (max-width : 850px) {
+  .experience .pipe {
+    display: none;
+  }
 
-.about-section {
-  float: none;
-  width: 100%;
-  margin-bottom: 60px;
-}
-
-.download-button {
-  text-align: center;
-}
+  .experience span {
+    display: block;
+  }
 
 
+  .download-button {
+    text-align: center;
+  }
 }
 
 
 @media only screen and (max-width : 540px) {
 
-.top-section {
-  display: flex;
-}
+  .logo {
+    float: none;
+    display: none;
+  }
+
+  .contact-info li, .contact-info ul {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .projects-section {
+    margin-bottom: 50px;
+  }
 
 }
