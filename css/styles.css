@@ -1,3 +1,8 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;
@@ -19,7 +24,6 @@ a:hover {
 .wrapper {
   width: 70%;
   margin: auto;
-  border-bottom: 1px solid #4B4B4B;
 }
 
 .wrapper.footer {
@@ -30,6 +34,7 @@ a:hover {
   padding-top: 50px;
   padding-bottom: 40px;
   margin-bottom: 50px;
+  border-bottom: 1px solid #4b4b4b;
 }
 
 .contact-info ul {
@@ -41,7 +46,7 @@ a:hover {
   list-style-type: none;
   font-family: "Roboto Mono", monospace;
   font-size: 14px;
-  line-height: 23px;
+  line-height: 25px;
 }
 
 .contact-info li:first-child {
@@ -54,21 +59,41 @@ a:hover {
 .logo {
   background: url(../images/hali-logo.png) no-repeat;
   background-size: contain;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   margin-right: 0;
+  transition: opacity 0.5s ease;
   float: left;
+}
+
+.logo:hover {
+  opacity: 0.7;
 }
 
 .project {
-  margin-bottom: 50px;
+  width: 48%;
+  margin-bottom: 30px;
 }
 
-.projects-section {
-  margin-bottom: 100px;
-  width: 60%;
-  float: left;
+.project:hover {
+  background: #fff;
 }
+
+.project img {
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.project img:hover {
+  opacity: 0.7;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 .projects-section h1, .projects-section h2, .experience-section h1, .experience-section h2 {
   font-family: 'Libre Franklin', sans-serif;
@@ -76,15 +101,32 @@ a:hover {
   margin-top: 0;
 }
 
-.projects-section h1, .experience-section h1 {
+.projects-section h1, .about-section h1, .experience-section h1 {
+  font-family: 'Libre Franklin', sans-serif;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 1.5px;
   margin-bottom: 30px;
 }
 
-.projects-section h2, .experience-section h2 {
-  font-size: 18px;
+.projects-section {
+  border-bottom: 1px solid #4b4b4b;
+}
+
+.about-section h2, .projects-section h2, .experience-section h2 {
+  font-size: 16px;
+}
+
+.about-section {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #4b4b4b;
+}
+
+.about-section p {
+  width: 75%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 .detail {
@@ -112,15 +154,18 @@ ul.detail  {
   content: '';
 }
 
-.projects-section section {
-  padding: 50px 0 50px 0;
-  border-bottom: 1px solid #000;
+.info {
+  margin-top: 30px;
+}
+
+.projects-section {
+  padding: 50px 0;
 }
 
 .projects-section p, .experience-section p {
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 .project-view {
@@ -147,21 +192,6 @@ ul.detail  {
   text-align: center;
 }
 
-.about-section {
-  float: right;
-  width: 40%;
-}
-
-.about-section p {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
-  line-height: 32px;
-}
-
-.about-section img {
-  width: 100%;
-}
-
 .experience-section {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -176,7 +206,8 @@ ul.detail  {
 }
 
 .download-button {
-  margin: 50px 0 70px 0;
+  margin: 50px;
+  text-align: center;
 }
 
 .download-button a {
@@ -196,9 +227,11 @@ ul.detail  {
 }
 
 .footer {
-  text-align: center;
+  margin-top: 50px;
   padding-bottom: 30px;
   font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  text-align: center;
 }
 
 .footer a {
@@ -219,15 +252,7 @@ ul.detail  {
   .projects-section {
     float: none;
     width: 100%;
-    border-bottom: 1px solid #000;
   }
-
-  .about-section {
-    float: none;
-    width: 100%;
-    margin-bottom: 60px;
-  }
-
 
   .footer div.contact-info {
     text-align: center;
@@ -236,17 +261,17 @@ ul.detail  {
 }
 
 @media only screen and (max-width : 850px) {
-  .experience .pipe {
-    display: none;
-  }
-
-  .experience span {
-    display: block;
-  }
-
 
   .download-button {
     text-align: center;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .about-section p {
+    width: 100%;
   }
 }
 
@@ -263,14 +288,12 @@ ul.detail  {
     padding-left: 0;
   }
 
-  .projects-section {
-    margin-bottom: 50px;
+  .download-button a {
+    font-size: 8px;
   }
 
   .footer .logo {
     display: inline;
     width: 100px;
   }
-
-
 }
