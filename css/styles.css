@@ -124,11 +124,13 @@ ul.detail  {
 }
 
 .project-view {
-  width: 50%;
+  width: 57%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   background: turquoise;
+  right: 0;
   left: 100%;
+  transition: right 0.5s ease;
   transition: left 0.5s ease;
 }
 
@@ -137,6 +139,7 @@ ul.detail  {
   display: block;
   margin: 20px;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .contact .email {
@@ -202,6 +205,10 @@ ul.detail  {
   padding: 5px;
 }
 
+.footer .logo {
+  display: none;
+}
+
 /* Desktops and laptops ----------- */
 @media only screen and (max-width : 1080px) {
 
@@ -224,11 +231,6 @@ ul.detail  {
 
   .footer div.contact-info {
     text-align: center;
-  }
-
-
-  .footer .logo {
-    display: none;
   }
 
 }
@@ -264,5 +266,11 @@ ul.detail  {
   .projects-section {
     margin-bottom: 50px;
   }
+
+  .footer .logo {
+    display: inline;
+    width: 100px;
+  }
+
 
 }
