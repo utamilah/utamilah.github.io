@@ -1,6 +1,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  transition: all 250ms ease-in-out;
 }
 
 .clearfix:after {
@@ -73,6 +74,7 @@ a:hover {
 .project {
   width: 48%;
   margin-bottom: 30px;
+  transition: width 0.5s ease;
 }
 
 .project:hover {
@@ -272,6 +274,7 @@ ul.detail  {
 
   .about-section p {
     width: 100%;
+    transition: width 0.5s ease;
   }
 }
 
