@@ -135,6 +135,10 @@ a:hover {
   color: #6200EA;
 }
 
+.about-section a:hover {
+  color: #000;
+}
+
 .detail {
   font-family: 'Roboto Mono', monospace;
   font-size: 10px;
