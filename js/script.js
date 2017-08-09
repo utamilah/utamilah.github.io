@@ -16,12 +16,12 @@ function shadow(e) {
   const yWalk = Math.round((y / width * walk) - (walk / 2))
 
   myName.style.textShadow = `
-    ${yWalk}px ${xWalk}px 0 rgba(0, 0, 0, 0.3)
+    ${yWalk}px ${xWalk}px 0 rgba(98, 0, 234, .3)
   `
 }
 
 function resetShadow() {
-  myName.style.textShadow = `0 0 0 rgba(0,0,0,0.3)`
+  myName.style.textShadow = `0 0 0 rgba(98, 0, 234, .3)`
 }
 
 body.addEventListener('mousemove', shadow)
