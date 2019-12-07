@@ -1,0 +1,26 @@
+{
+  "name": "utamilah.github.io",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utamilah/utamilah.github.io.git"
+  },
+  "author": "Halimatu Bakarr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utamilah/utamilah.github.io/issues"
+  },
+  "homepage": "https://github.com/utamilah/utamilah.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.13.0"
+  }
+}
