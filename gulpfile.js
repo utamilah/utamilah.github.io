@@ -6,7 +6,7 @@ const browsersync = require('browser-sync');
 function css() {
     return src('./css/*')
         .pipe(sass())
-        .pipe(dest('build/css/'));
+        .pipe(dest('css/'));
 }
 
 function html() {
