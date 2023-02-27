@@ -1,4 +1,0 @@
-// Module
-var code = "export default __webpack_public_path__ + \"1646f6a3b399afff3e7b8c234bf643f0.png\";";
-// Exports
-export default code;
