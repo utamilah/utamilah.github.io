@@ -6,6 +6,7 @@ module.exports = {
 	output: {
 		path: __dirname + "/dist/build",
 		filename: "bundle.js",
+		assetModuleFilename: "images/[name].[ext]",
 	},
 	devServer: {
 		static: {

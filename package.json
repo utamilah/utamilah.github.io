@@ -2,7 +2,7 @@
 	"name": "utamilah.github.io",
 	"version": "1.0.0",
 	"description": "portfolio website",
-	"main": "gulpfile.js",
+	"main": "src/app.js",
 	"scripts": {
 		"start": "webpack-dev-server --open --mode development --config webpack.config.js",
 		"build": "webpack --mode production",
@@ -20,6 +20,8 @@
 	"devDependencies": {
 		"css-loader": "^6.7.3",
 		"express": "^4.18.2",
+		"file-loader": "^6.2.0",
+		"html-loader": "^4.2.0",
 		"html-webpack-plugin": "^5.5.0",
 		"node-sass": "^8.0.0",
 		"sass-loader": "^13.2.0",
