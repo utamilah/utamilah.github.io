@@ -1,0 +1,141 @@
+/* Media Queries */
+body {
+  background: #F8F8F8;
+  padding: 3em;
+  font-family: 'Libre Franklin', sans-serif; }
+
+/* Global styles */
+h1 {
+  font-size: 36px; }
+
+/* *** */
+.header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between; }
+  .header h1 {
+    margin: 0; }
+  .header p {
+    margin: 10px 0; }
+  .header a {
+    padding: 0;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .header a:hover {
+      padding-bottom: 5px;
+      border-bottom: 2px solid #000;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; } }
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 100px; }
+  .about-section h1 {
+    position: absolute;
+    width: 45%;
+    padding-top: 10px; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .about-section h1 {
+        width: 100%; } }
+    @media (max-width: 768px) {
+      .about-section h1 {
+        width: 100%; } }
+
+.description {
+  width: 50%;
+  background: #fff;
+  margin-left: 30%;
+  padding: 60px 50px 50px 20%; }
+  .description p {
+    font-size: 30px;
+    line-height: 1.5; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .description p {
+        font-size: 24px; } }
+    @media (max-width: 768px) {
+      .description p {
+        font-size: 20px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .description {
+      width: 100%;
+      margin: 80px 0 0;
+      padding: 50px 50px 50px 250px; } }
+  @media (max-width: 768px) {
+    .description {
+      width: 100%;
+      margin: 200px 0 0;
+      padding: 50px; } }
+
+.project-section {
+  display: flex; }
+  .project-section .project {
+    margin: 10px 0;
+    line-height: 1.5;
+    padding-right: 30px;
+    width: 50%; }
+    .project-section .project h5 {
+      font-size: 24px;
+      margin: 0; }
+      .project-section .project h5 a {
+        color: #000; }
+    .project-section .project p {
+      font-size: 24px;
+      margin: 10px 0; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .project-section .project p {
+          font-size: 20px; } }
+      @media (max-width: 768px) {
+        .project-section .project p {
+          font-size: 20px; } }
+    .project-section .project .links {
+      font-size: 20px; }
+      .project-section .project .links a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.2s ease; }
+        .project-section .project .links a:hover {
+          color: #444; }
+    @media (max-width: 768px) {
+      .project-section .project {
+        width: 100%; } }
+  @media (max-width: 768px) {
+    .project-section {
+      flex-direction: column; } }
+
+.graphic {
+  margin-top: 30px; }
+  .graphic img {
+    width: 250px;
+    position: absolute;
+    top: 200px;
+    left: 25%; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .graphic img {
+        width: 200px;
+        top: 180px;
+        left: 0; } }
+    @media (max-width: 768px) {
+      .graphic img {
+        display: none; } }
+
+.footer {
+  margin: 100px 0 0 0;
+  text-align: center; }
+  .footer a {
+    color: #000000;
+    padding: 5px;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; }
+    .footer a:hover {
+      opacity: 0.7; }
+
+/*# sourceMappingURL=styles.css.map */
