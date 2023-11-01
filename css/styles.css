@@ -113,10 +113,10 @@ h1 {
 .graphic {
   margin-top: 30px; }
   .graphic img {
-    width: 270px;
+    width: 210px;
     position: absolute;
-    top: 200px;
-    left: 15%; }
+    top: 180px;
+    left: 25%; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .graphic img {
         width: 200px;
